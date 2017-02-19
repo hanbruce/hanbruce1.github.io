@@ -384,7 +384,7 @@
 </blockquote>
 <p>成功的如下图：<br><img src="\images\git\git.png" alt="Git"><br>. 用户配置</p>
 <blockquote>
-<p>git config –global user.name “your name”<br>  git config –global user.email your email</p>
+<p>git config –global user.name  “your name”<br>  git config –global user.email  “your email”</p>
 </blockquote>
 <p>. 查看配置信息<br>输入以下命令，检验受否配置成功</p>
 <blockquote>
@@ -396,9 +396,12 @@
 <li>注册Github账号<br><img src="\images\git\sign_up.png" alt="sign up"><br>依次填入个人：昵称、邮箱、密码，然后点击”Sign up for Github”。注意，去邮箱验证Github发送的验证邮件。</li>
 <li>个人账号属性<br><img src="\images\git\repo.png" alt="repo"><br>推荐勾选free，然后选择Finish sign up。能免费干嘛要付费，反正我又没啥秘密，不介意，你随便看看……</li>
 <li>ssh key<br>在Git Bash中输入以下命令，生成ssh key.<blockquote>
-<p>ssh-key -t rsa -C “your email”<br>成功的话会在~/下生成.ssh文件夹，进去，打开 id_rsa.pub，复制里面的 key。<br><img src="\images\git\ssh.png" alt=".ssh"></p>
+<p>ssh-key -t rsa -C “your email”<br>成功的话会在~/下生成.ssh文件夹，进去，打开 id_rsa.pub，复制里面的 key。</p>
 </blockquote>
 </li>
+</ol>
+<p><img src="\images\git\ssh.png" alt=".ssh"></p>
+<ol>
 <li>add ssh key<br>点击图标右边三角形选择setting<br><img src="\images\git\enter_setting.png" alt="enter_setting"><br>单击”SSH and GPG keys“,选择”New SSH key“<br><img src="\images\git\add_key.jpg" alt="add key"><br>添加成功之后的界面<br><img src="\images\git\add_key.png" alt="add key"></li>
 <li>验证是否成功<br>输入以下命令：<blockquote>
 <p>ssh -T git@github.com<br>Hi hanbruce! You’ve successfully authenticated, but GitHub does not provide shell access.</p>
